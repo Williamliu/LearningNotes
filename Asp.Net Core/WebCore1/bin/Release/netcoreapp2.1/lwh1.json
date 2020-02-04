@@ -1,0 +1,11 @@
+﻿{
+  "database": {
+    "user": "superman",
+    "flag": "good"
+  },
+  "website": "www.d3security.com",
+  "ftp": {
+    "uid": "998",
+    "trans": "Vancouver"
+  }
+}

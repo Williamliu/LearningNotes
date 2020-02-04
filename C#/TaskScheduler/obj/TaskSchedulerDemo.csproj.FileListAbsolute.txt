@@ -1,0 +1,16 @@
+c:\Projekte\TaskScheduler\TaskScheduler\obj\Debug\ResolveAssemblyReference.cache
+c:\Projekte\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.Demo.resources
+c:\Projekte\TaskScheduler\TaskScheduler\obj\Debug\TaskSchedulerDemo.Properties.Resources.resources
+c:\Projekte\TaskScheduler\TaskScheduler\obj\Debug\TaskSchedulerDemo.csproj.GenerateResource.Cache
+c:\Projekte\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.exe
+c:\Projekte\TaskScheduler\TaskScheduler\bin\Debug\TaskScheduler.exe
+c:\Projekte\TaskScheduler\TaskScheduler\bin\Debug\TaskScheduler.pdb
+c:\Projekte\TaskScheduler\TaskScheduler\obj\Debug\TaskScheduler.pdb
+C:\Projekte\TaskScheduler\obj\Debug\TaskScheduler.exe
+C:\Projekte\TaskScheduler\obj\Debug\TaskScheduler.pdb
+C:\Projekte\TaskScheduler\bin\Debug\TaskScheduler.exe
+C:\Projekte\TaskScheduler\bin\Debug\TaskScheduler.pdb
+C:\Projekte\TaskScheduler\obj\Debug\ResolveAssemblyReference.cache
+C:\Projekte\TaskScheduler\obj\Debug\TaskScheduler.Demo.resources
+C:\Projekte\TaskScheduler\obj\Debug\TaskSchedulerDemo.Properties.Resources.resources
+C:\Projekte\TaskScheduler\obj\Debug\TaskSchedulerDemo.csproj.GenerateResource.Cache

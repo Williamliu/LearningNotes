@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.Win32.TaskSchedulerEditor</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.Win32.TaskScheduler.ActionEditDialog">
+      <summary>
+            An editor that handles all Task actions.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.ActionEditDialog.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.ActionEditDialog" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.ActionEditDialog.#ctor(Microsoft.Win32.TaskScheduler.Action)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.ActionEditDialog" /> class with the provided action.
+            </summary>
+      <param name="action">The action.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.ActionEditDialog.Action">
+      <summary>
+            Gets or sets the action.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.ActionEditDialog.Dispose(System.Boolean)">
+      <summary>
+            Clean up any resources being used.
+            </summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.ActionEditDialog.Prompt">
+      <summary>
+            Gets or sets the prompt text at the top of the dialog.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.ActionEditDialog.SupportV1Only">
+      <summary>
+            Gets or sets a value indicating whether this editor only supports V1 actions.
+            </summary>
+    </member>
+    <member name="T:Microsoft.Win32.TaskScheduler.TaskEditDialog">
+      <summary>
+            Dialog that allows tasks to be edited
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskEditDialog.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.TaskEditDialog" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskEditDialog.Dispose(System.Boolean)">
+      <summary>
+            Clean up any resources being used.
+            </summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.Editable">
+      <summary>
+            Gets or sets a value indicating whether this <see cref="T:Microsoft.Win32.TaskScheduler.TaskEditDialog" /> is editable.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskEditDialog.Initialize(Microsoft.Win32.TaskScheduler.Task)">
+      <summary>
+            Initializes the control for the editing of an existing <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.Task" />.
+            </summary>
+      <param name="task">A <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.Task" /> instance.</param>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskEditDialog.Initialize(Microsoft.Win32.TaskScheduler.TaskService)">
+      <summary>
+            Initializes the control for the editing of a new <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.TaskDefinition" />.
+            </summary>
+      <param name="service">A <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.TaskService" /> instance.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.RegisterTaskOnAccept">
+      <summary>
+            Gets or sets a value indicating whether to register task when Accept (Ok) button pressed.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.Task">
+      <summary>
+            Gets the current <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.Task" />. This is only the task used to initialize this control. The updates made to the control are not registered.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.TaskDefinition">
+      <summary>
+            Gets the <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.TaskDefinition" /> in its edited state.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.TaskService">
+      <summary>
+            Gets the <see cref="P:Microsoft.Win32.TaskScheduler.TaskEditDialog.TaskService" /> assigned at initialization.
+            </summary>
+    </member>
+    <member name="T:Microsoft.Win32.TaskScheduler.TaskPropertiesControl">
+      <summary>
+            Control which allows for the editing of all properties of a <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskDefinition" />.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.TaskPropertiesControl" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Dispose(System.Boolean)">
+      <summary> 
+            Clean up any resources being used.
+            </summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Editable">
+      <summary>
+            Gets or sets a value indicating whether this <see cref="T:Microsoft.Win32.TaskScheduler.TaskPropertiesControl" /> is editable.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Initialize(Microsoft.Win32.TaskScheduler.Task)">
+      <summary>
+            Initializes the control for the editing of an existing <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Task" />.
+            </summary>
+      <param name="task">A <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Task" /> instance.</param>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Initialize(Microsoft.Win32.TaskScheduler.TaskService)">
+      <summary>
+            Initializes the control for the editing of a new <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskDefinition" />.
+            </summary>
+      <param name="service">A <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskService" /> instance.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Task">
+      <summary>
+            Gets the current <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.Task" />. This is only the task used to initialize this control. The updates made to the control are not registered.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskDefinition">
+      <summary>
+            Gets the <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskDefinition" /> in its edited state.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskService">
+      <summary>
+            Gets the <see cref="P:Microsoft.Win32.TaskScheduler.TaskPropertiesControl.TaskService" /> assigned at initialization.
+            </summary>
+    </member>
+    <member name="T:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard">
+      <summary>
+            A wizard that walks the user through the creation of a simple task.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard.Dispose(System.Boolean)">
+      <summary>
+            Clean up any resources being used.
+            </summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard.RegisterTaskOnFinish">
+      <summary>
+            Gets or sets a value indicating whether to register the task on Finish.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard.TaskDefinition">
+      <summary>
+            Gets or sets the <see cref="P:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard.TaskDefinition" />.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TaskSchedulerWizard.TaskName">
+      <summary>
+            Gets or sets the name of the task.
+            </summary>
+    </member>
+    <member name="T:Microsoft.Win32.TaskScheduler.TriggerEditDialog">
+      <summary>
+            An editor that handles all Task triggers.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TriggerEditDialog.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.TriggerEditDialog" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TriggerEditDialog.#ctor(Microsoft.Win32.TaskScheduler.Trigger,System.Boolean)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Win32.TaskScheduler.TriggerEditDialog" /> class.
+            </summary>
+      <param name="trigger">The <see cref="P:Microsoft.Win32.TaskScheduler.TriggerEditDialog.Trigger" /> to edit.</param>
+      <param name="supportV1Only">If set to <c>true</c> support V1 triggers only.</param>
+    </member>
+    <member name="M:Microsoft.Win32.TaskScheduler.TriggerEditDialog.Dispose(System.Boolean)">
+      <summary>
+            Clean up any resources being used.
+            </summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TriggerEditDialog.SupportV1Only">
+      <summary>
+            Gets or sets a value indicating whether this editor only supports V1 triggers.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TriggerEditDialog.TargetServer">
+      <summary>
+            Gets or sets the target server.
+            </summary>
+    </member>
+    <member name="P:Microsoft.Win32.TaskScheduler.TriggerEditDialog.Trigger">
+      <summary>
+            Gets or sets the trigger that is being edited.
+            </summary>
+    </member>
+  </members>
+</doc>

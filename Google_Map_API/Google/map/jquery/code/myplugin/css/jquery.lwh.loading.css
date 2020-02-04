@@ -1,0 +1,26 @@
+.lwh-pluging-loading {
+    background-color: #FFFFFF;
+    color: #666666;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    height: 72px;
+    left: -2000px;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: -2000px;
+    vertical-align: middle;
+    width: 160px;
+    z-index: 99999;
+}
+.lwh-pluging-loading-img {
+    background: url("image/icon/data_loading.gif") no-repeat scroll center center #FFFFFF;
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    vertical-align: middle;
+    width: 34px;
+}

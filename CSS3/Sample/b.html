@@ -1,0 +1,125 @@
+<html>
+<head>
+    <style>
+        .flip {
+            display:    block;
+            position:   relative;
+            border:     2px solid orange;
+            width:      400px;
+            height:     300px;
+
+            perspective: 1000px !important;
+        } 
+        
+        /* flip frame: rotateY(0deg) */  
+        .flip > .flip-frame {
+            display:    block;
+            position:   static;
+            box-sizing: border-box;
+            width:      100%;
+            height:     100%;
+            border:     1px solid purple; 
+        
+            transform:  rotateY(0deg) !important;
+            transition: transform 1s !important;
+            transform-style: preserve-3d;  
+            /* left top; center center; 10% 10%; */
+            transform-origin: center center;
+        }
+
+        /* mouse hover on flip frame:  rotateY(-180deg)  animate flip 180 deg here... */
+        .flip:hover > .flip-frame,  /* mouse hover */
+        .flip.toggle > .flip-frame  /* used for javascript toggle */
+        {
+            transform:  rotateY(-180deg) !important;
+        }
+
+        /* frong and back face common setting */
+        .front, .back 
+        {
+            display:    block;
+            position:   absolute;
+            top:        0px;
+            bottom:     0px;
+            left:       0px;
+            right:      0px;
+
+            transition: opacity 1s !important;
+        }
+        
+        /* front face :  visible and rotateY(0deg)  */
+        .front {
+            background: pink;
+
+            transform:  rotateY(0deg) !important;
+            opacity:    1 !important;
+        }
+
+        /* back face :  hidden and rotateY(180deg)  */
+        .back {
+            background: yellow;
+            
+            transform:  rotateY(180deg) !important;
+            opacity:    0 !important;
+        }
+
+        /* mouse hover:  hide front face  and show back face */
+        .flip:hover > .flip-frame > .front,  /* mouse hover */
+        .flip.toggle > .flip-frame > .front  /* used for javascript toggle */
+        {
+            opacity:    0 !important;
+        }
+        .flip:hover > .flip-frame > .back,  /* mouse hover */
+        .flip.toggle > .flip-frame > .back  /* used for javascript toggle */
+        {
+            opacity:    1 !important;
+        }
+        
+        /* horizontal and vertical align test */
+        .front > span,
+        .back > span {
+            display:    block;
+            position:   absolute;
+            font-size:  32px;
+            top:        50%;
+            left:       50%;
+            transform:  translate(-50%, -50%);
+        }
+
+    </style>
+    <script>
+    function ToggleFlip() {
+        document.querySelector(".flip").classList.toggle("toggle");
+    }
+    </script>
+</head>
+<body>
+    <center><br>
+    <button onclick="ToggleFlip()">Toggle Flip</button>
+    <br><br>
+    <div class="flip" ontouchstart="ToggleFlip()">
+        <div class="flip-frame">
+            <div class="front">
+                <span>Front Side</span> 
+            </div>
+            <div class="back">
+                <span>Back Side</span> 
+                    
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="flip">
+        <div class="flip-frame">
+            <div class="front">
+                <img src="pic1.jpg" style="width:100%;height:100%;object-fit:contain;" />
+            </div>
+            <div class="back">
+                <img src="pic2.jpg" style="width:100%;height:100%;object-fit:contain;" />
+            </div>
+        </div>
+    </div>
+        
+    </center>
+</body>
+</html>

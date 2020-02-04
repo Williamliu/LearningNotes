@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>Sample of Top Navi</title>
+    <style>
+        body {
+            padding: 0px;
+            letter-spacing: 2px;
+        }
+
+        .navi {
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            font-size: 18px;
+            font-family: Montserrat;
+            line-height: 24px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: rgba(0,0,0,.2);
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+            font-weight: 300;
+            transition: background-color;
+            transition-delay: 0.3s;
+            transition-duration: 2s;
+            z-index: 1030;
+        }
+
+        .navi-offset {
+            background-color: #AA886B;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        div.main-image {
+            width: 100%;
+            background-color: #000000;
+            opacity: 1;
+        }
+
+            div.main-image > img {
+                width: 100%;
+                max-height: 100vh;
+                object-fit: cover;
+                opacity: 0.6;
+            }
+
+        ul > li > a {
+            color: #ffffff !important;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+            ul > li > a:hover {
+                background-color: rgba(0,0,0,.3) !important;
+            }
+    </style>
+    <script>
+        window.onscroll = function() {
+            var x = document.getElementsByClassName("navi");
+            if(x[0]) {
+                var height = 0;
+                if(window.pageYOffset > height) {
+                    x[0].classList.add("navi-offset")
+                } else {
+                    x[0].classList.remove("navi-offset")
+                }
+            }
+        };
+    </script>
+
+</head>
+<body>
+    <div class="navi">
+        <div class="container">
+            <a href="#" style="height: 100%;">
+                <img src="logo.png" class="img-responsive" style="height:32px;float:left;margin-top:6px;" />
+            </a>
+            <ul class="nav navbar-nav" style="color:#ffffff;vertical-align: middle;margin-left:30px;">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">TEACHERS</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">VIDEOS</a></li>
+            </ul>
+            <div style="float:right; margin-top:6px;">
+                <input placeholder="SEARCH" style="border:0px; border-bottom: 1px solid #ffffff; color:#ffffff; font-size:18px; padding-bottom:6px; padding-left:25px; background:0px center url(search.png) no-repeat;" value="" />
+                <input type="button" style="border:2px solid #ffffff; border-radius:24px; color:#ffffff; background-color: transparent; padding:6px 30px; margin-left:30px; font-size:16px; font-weight: bold;" value="SIGN IN" />
+            </div>
+        </div>
+    </div>
+
+    <div class="main-image">
+        <img src="picture.png" class="main-image" />
+    </div>
+    <div class="container">
+        Other content here
+        <div style="display:block; width:100%; height:2000px; background-color:#cccccc;"></div>
+    </div>
+</body>
+</html>

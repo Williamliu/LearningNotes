@@ -1,0 +1,11 @@
+D:\VS2017\EntityFrameWork\bin\Debug\netcoreapp2.1\EntityFrameWork.deps.json
+D:\VS2017\EntityFrameWork\bin\Debug\netcoreapp2.1\EntityFrameWork.runtimeconfig.json
+D:\VS2017\EntityFrameWork\bin\Debug\netcoreapp2.1\EntityFrameWork.runtimeconfig.dev.json
+D:\VS2017\EntityFrameWork\bin\Debug\netcoreapp2.1\EntityFrameWork.dll
+D:\VS2017\EntityFrameWork\obj\Debug\netcoreapp2.1\EntityFrameWork.csproj.CoreCompileInputs.cache
+D:\VS2017\EntityFrameWork\obj\Debug\netcoreapp2.1\EntityFrameWork.AssemblyInfoInputs.cache
+D:\VS2017\EntityFrameWork\obj\Debug\netcoreapp2.1\EntityFrameWork.AssemblyInfo.cs
+D:\VS2017\EntityFrameWork\bin\Debug\netcoreapp2.1\EntityFrameWork.pdb
+D:\VS2017\EntityFrameWork\obj\Debug\netcoreapp2.1\EntityFrameWork.dll
+D:\VS2017\EntityFrameWork\obj\Debug\netcoreapp2.1\EntityFrameWork.pdb
+D:\VS2017\EntityFrameWork\obj\Debug\netcoreapp2.1\EntityFrameWork.csprojAssemblyReference.cache

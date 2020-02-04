@@ -1,0 +1,13 @@
+﻿{
+  "database": {
+    "host": "localhost",
+    "user": "dba",
+    "pwd": "889"
+  },
+  "website": "www.d3security.com",
+  "ftp": {
+    "server": "ftp://qa.d3security.com",
+    "uid": "567",
+    "password": "d3456"
+  }
+}

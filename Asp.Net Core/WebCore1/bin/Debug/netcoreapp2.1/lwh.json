@@ -1,0 +1,17 @@
+﻿{
+  "database": {
+    "host": "localhost",
+    "user": "dba",
+    "pwd": "889"
+  },
+  "website": "www.d3security.com",
+  "ftp": {
+      "server": {
+        "host": "ftp://qa.d3security.com",
+        "ip": "192.168.1.200",
+        "port":  4530
+      },
+      "uid": "567",
+      "password": "d3456"
+    }
+}

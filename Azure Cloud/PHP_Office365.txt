@@ -1,0 +1,17 @@
+PS C:\Users\Xinyang> New-MsolServicePrincipal -ServicePrincipalNames @("putihome/sample") -DisplayName "Putihome Sample
+Website" -Type Symmetric -Usage Verify -StartDate "12/01/2014" -EndDate "12/01/2016"
+The following symmetric key was created as one was not supplied O+qZxMkdsi1eSWHcmnBKx6+Ntd05p8jfQAKjtM3w9sI=
+
+
+DisplayName : Putihome Sample Website
+ServicePrincipalNames : {putihome/sample, 75f5612d-ffa0-43a9-bd32-19f15986ea22}
+ObjectId : 0fe3a74b-5df4-49a2-b0d6-23f9ceeae1a6
+AppPrincipalId : 75f5612d-ffa0-43a9-bd32-19f15986ea22
+TrustedForDelegation : False
+AccountEnabled : True
+Addresses : {}
+KeyType : Symmetric
+KeyId : 8bf0e4f7-37c3-47ff-a660-d47a28f3b17b
+StartDate : 12/1/2014 8:00:00 AM
+EndDate : 12/1/2016 8:00:00 AM
+Usage : Verify

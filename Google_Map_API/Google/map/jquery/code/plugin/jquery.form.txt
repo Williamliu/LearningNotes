@@ -1,0 +1,3 @@
+http://www.malsup.com/jquery/form/#ajaxForm   sample and documentation
+http://www.malsup.com/jquery/form/            official documentation
+

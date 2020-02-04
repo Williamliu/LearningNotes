@@ -1,0 +1,40 @@
+http://www.steamdev.com/imgr/     sample and documentation
+
+
+   1. <script type="text/javascript" src="js/jquery.js"></script>
+   2. <script type="text/javascript" src="js/jquery.imgr.js"></script>
+
+   1. $(document).ready(function(){
+   2.  
+   3. $("img.ex1").imgr({size:"3px",color:"yellow",radius:"10px"});
+   4. // Finds <img> elements with the class "ex1"
+   5. // IMGr applies a 3px yellow border with 10px corner radii.
+   6.
+   7. $("img.ex2").imgr({size:"5px",color:"blue",radius:"15px 5px 15px 5px"});
+   8. // Finds <img> elements with the class "ex2"
+   9. // IMGr applies a 5px blue border with 15px(tl) 5px(tr) 15px(br) 5px(bl) corner radii.
+  10.
+  11. $("img.ex3").imgr({size:"1px",color:"red",radius:"20px 0"});
+  12. // Finds <img> elements with the class "ex3"
+  13. // IMGr applies a 1px red border with 20px(tl tr) 0(bl br) corner radii.
+  14.  
+  15. });
+  16.  
+  17. /* See these examples below */
+
+
+# $(document).ready(function(){
+#  
+# $("img.ex1").imgr({size:"3px",color:"yellow",radius:"10px"});
+# 	// Finds <img> elements with the class "ex1"
+# 	// IMGr applies a 3px yellow border with 10px corner radii.
+#  
+#	$("a#update").click(function(){
+#		$("img.ex1,img.ex2,img.ex3").imgr({radius:"20px"});
+# 		return false;
+# 		// Finds <img> elements with the class "ex1, ex2, and ex3"
+# 		// IMGr applies 20px corner radii; preserving all other pre-existing settings
+# 	});
+#	  
+# });
+#  
